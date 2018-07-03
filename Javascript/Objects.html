@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="header">
+		<h1>My Website</h1>
+		<p>Aaron Zhang</p>
+	</div>
+
+	<script>
+		var person = {
+			firstName: 'Aaron',
+			lastName: 'Zhang',
+			age:16, 
+			food: ['pizza', 'sushi'], 
+			address: {
+				street: '5969 Stonebriar cres.',
+				city: 'Mississauga',
+				Province: 'Ontario'
+			},
+		
+
+			fullName: function(){
+				return person.firstName +" "+person.lastName;
+			}
+		}
+
+		console.log(person.fullName());
+		console.log(person.food[1]);
+		console.log(person.address.city);
+
+	</script>
+
+</body>
+</html>

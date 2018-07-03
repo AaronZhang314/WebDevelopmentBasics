@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="header">
+		<h1 id="heading">My Website</h1>
+		<p>Aaron Zhang</p>
+	</div>
+
+	<div class="container">
+		<button onclick="doClick()">Click Me</button>
+		<button onclick="this.innerHTML = 'You Clicked'">Other Button</button>
+		<button onclick="changeText(this)">Separate Way</button>
+	</div>
+
+	<script>
+		function doClick(){
+			alert('You Clicked');
+		}
+		function changeText(id){
+			id.innerHTML = 'You Clicked!';
+		}
+	</script>
+
+</body>
+</html>
